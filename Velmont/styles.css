@@ -8,7 +8,8 @@ font-family: 'Poppins', sans-serif;(100 - 900, common - italic)
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -17,6 +18,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* H */
+h1, h2, h3 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .subtitulos{
@@ -112,6 +119,89 @@ nav ul li a:hover::after {
 
 .logoNav {
     width: 10rem;
+}
+
+/* Fondo del sitio. */
+.fondo-gradiente {
+    background-image: url(img/fondo_velmont_gradiente.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Fondo secciones, foto decorativa. */
+.presentacion {
+    background-image: url(img/fondo_velmont_elementos.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+/* Párrafos */
+.parrafo-presentacion, .parrafo-general {
+    color: white;
+    font-family: 'Judson', serif;
+    font-size: 1.5rem;
+    
+}
+.parrafo-presentacion{
+    text-align: center;
+    background-color: rgba(58, 42, 42, 0.712);
+}
+.parrafo-general {
+    text-align: left;
+}
+
+.historia {
+    border: 2px, solid, white;
+}
+
+.servicios {
+    background-image: url(img/minibar_velmont.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+/* Lista de servicios */
+.lista-servicios{
+    list-style-type: none;
+    color: white;
+    background-color: rgba(58, 42, 42, 0.712);
+    font-family: 'Poppins', sans-serif;
+}
+
+.efectivo {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+
+/* Textos animados de promo */
+.promo1, .promo2, .promo3, .promo4 {
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Judson';
+    font-weight: bold;
+}
+.promo1 {
+    transition: all 1.8s linear;
+}
+.promo2 {
+    transition: all 1.8s ease-in;
+}
+.promo3 {
+    transition: all 1.8s ease-in-out;
+}
+.promo4 {
+    transition: all 1.8s ease-out;
+}
+
+.contenedor-promo:hover .promo1,
+.contenedor-promo:hover .promo2,
+.contenedor-promo:hover .promo3,
+.contenedor-promo:hover .promo4 {
+    transform: translateX(5rem);
 }
 
 .opinionesContainer {
@@ -286,7 +376,7 @@ hr {
 
 }
 
-@media (max-width: 992px) {
+@img (max-width: 992px) {
     nav {
         display: flex;
         flex-direction: column;
@@ -321,7 +411,7 @@ hr {
 }
 
 
-@media (max-width: 768px) {
+@img (max-width: 768px) {
     ul {
         position: fixed;
         top: 170px;
